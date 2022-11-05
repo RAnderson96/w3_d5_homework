@@ -1,0 +1,149 @@
+body {
+    font-family: garamond, sans-serif;
+}
+
+
+footer {
+    font-family: garamond, sans-serif;
+
+    padding: 7px;
+    margin-bottom: 0;
+    background-color: #CEF0D1;
+    text-align: center;
+    color: #607062;
+    font-weight: bold;
+}
+
+header {
+    font-family: garamond, sans-serif;
+}
+
+
+
+
+
+
+.grid-container2{
+    display: grid;
+
+    grid-template-columns: auto auto auto;
+    grid-gap: 10px;
+    justify-content: space-evenly;
+    margin: 40px;
+
+
+}
+
+#book {
+    background-color: #CEF0D1;
+    padding: 20px;
+    border-radius: 15px;
+    border-style: solid;
+    border-color: #97B099;
+    border-width: 3px;
+
+}
+
+header {
+    padding: 10px;
+    margin-top: 0;
+    background-color: #CEF0D1;
+    
+}
+
+header > h1 {
+    text-align: center;
+    color: #607062;
+    font-weight: bold;
+
+}
+
+
+
+div > h2 {
+    text-align: center;
+    color: #607062;
+    font-weight: bold;
+
+}
+
+aside {
+    width: 250px;
+    padding-left: 40px;
+}
+
+
+
+aside > div {
+   margin: 5px 10px 5px 10px;
+}
+
+aside > div > input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 3px solid  #97B099;
+    border-radius: 8px;
+}
+
+aside > div > textarea {
+
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 3px solid  #97B099 ;
+    border-radius: 8px;
+}
+
+aside > div > form > input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 3px solid  #97B099 ;
+    border-radius: 8px;
+
+
+}
+
+
+aside > div > label {
+    margin: 5px 10px 5px 10px;
+}
+
+
+aside > div > form > label {
+    margin: 5px 10px 5px 10px;
+
+
+}
+
+aside {
+    display: flex;
+    align-items: center;
+}
+
+.internal-buttons > input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 3px solid  #97B099 ;
+    border-radius: 8px;
+    
+}
+
+.internal-buttons > form > input {
+    vertical-align: middle;
+    margin: 5px 10px 5px 0;
+    padding: 10px;
+    background-color: #fff;
+    border: 3px solid  #97B099 ;
+    border-radius: 8px;
+}
+
+.grid-container2 > div > p > a {
+    text-align: center;
+}
