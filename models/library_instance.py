@@ -10,16 +10,16 @@ blurb4 = "In Immune, Philipp Dettmer, the brains behind the most popular science
 
 
 
-book_1 = Library("The Name of the Wind", "Patrick Rothfuss", "Fantasy", blurb3, False)
-book_2 = Library("The Fellowship of the Ring", "J.R.R Tolkien", "Fantasy", blurb2, False)
-book_3 = Library("Leviathan Wakes", "James S.A. Corey","Science-Fiction", blurb1, False)
-book_4 = Library("IMMUNE", "Philipp Dettmer", "Medical Non-Fiction", blurb4, False)
+book_1 = Library("The Name of the Wind", "Patrick Rothfuss", "Fantasy", blurb3)
+book_2 = Library("The Fellowship of the Ring", "J.R.R Tolkien", "Fantasy", blurb2)
+book_3 = Library("Leviathan Wakes", "James S.A. Corey","Science-Fiction", blurb1)
+book_4 = Library("IMMUNE", "Philipp Dettmer", "Medical Non-Fiction", blurb4)
 
 blurb5 = "Shallan, a minor lighteyed woman whose family and lands are in danger, hatches a daring plot to switch a broken Soulcaster (a device that allows people to change objects to other things) with a working one belonging to Jasnah Kholin, sister of the Alethi king."
-book_5 = Library("The Way of Kings", "Brandon Sanderson", "Fantasy", blurb5, False)
+book_5 = Library("The Way of Kings", "Brandon Sanderson", "Fantasy", blurb5)
 
 blurb6 = "The Colour of Magic is a collection of four stories set on Discworld, a flat planet that is carried by four huge elephants that stand on the back of the giant turtle Great A'Tuin. The stories pivot on the hapless failed wizard Rincewind."
-book_6 = Library("The Colour of Magic", "Terry Pratchett", "Fantasy", blurb6, False)
+book_6 = Library("The Colour of Magic", "Terry Pratchett", "Fantasy", blurb6)
 
 
 books = [book_1, book_2, book_3, book_4, book_5, book_6]
@@ -35,6 +35,5 @@ def remove_book_from_list(book_title):
             break
     books.remove(book_to_delete)
 
-# def checkout_book(index):
-#     book_to_checkout = books[index]
-#     book_to_checkout.checked_out= not book_to_checkout.checked_out
+
+    

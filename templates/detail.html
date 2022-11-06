@@ -17,9 +17,23 @@
     <p><b>Author: </b>{{books.author}}</p>
     <p><b>Genre: </b>{{books.genre}}</p>
     
+
     <div>
         <p><b>Summary: </b> {{books.blurb}}</p>
     </div>
+
+    
+
+
+
+    <button onclick="goBack()">Go Back</button>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+
 
 
 </body>

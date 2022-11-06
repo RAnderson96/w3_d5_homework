@@ -26,9 +26,7 @@ def remove_book(title):
     remove_book_from_list(title)
     return redirect('/library')
 
-# @app.route('/library/books/<index>', methods=['POST'])
-# def check_out(index):
-#     checkout_book(index)
-#     return redirect('/library') 
+
+ 
 
     

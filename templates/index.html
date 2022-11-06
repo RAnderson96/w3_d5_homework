@@ -48,6 +48,7 @@
                     <b>Title: </b>{{book.title}}<br>
                     <b>Author: </b>{{book.author}}<br>
                     <b>Genre: </b>{{book.genre}}<br>
+                    <b>Status: </b>{{book_status}}
 
                     {% if book.checked_out==False%}
                     <span><b>Status: </b>Available &#9745;</span>
@@ -56,8 +57,10 @@
                     <span><b>Status: </b>Checked Out &#9746;</span>
                     {% endif %}
                     <br>
+
+
                     <a href="/library/{{loop.index}}">More Info</a><br>
-                    
+
                 </p>
                 <div class="internal-buttons">
                     <form class="form-inline" action="/library/delete/{{ book.title }}" method="POST">
@@ -65,24 +68,14 @@
                     </form>
                     <br>
                 </div>
-                <div class="internal-buttons">
-                    <!-- <form class="form-inline" action="/library/checkout/{{ book.title}}" method="POST">
-                        {% if book.checked_out==False%}
-                        <input type="submit" value="Check Out">
-                        {% endif %}
-                        {% if book.checked_out == True%}
-                        <input type="submit" value="Check In">
-                        {% endif %} -->
-                </div>
 
 
 
             </div>
-
             {% endfor %}
 
         </section>
-            
+
     </div>
 
 </body>

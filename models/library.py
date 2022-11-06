@@ -1,9 +1,10 @@
 class Library:
-    def __init__(self, title, author, genre, blurb, checked_out):
+    def __init__(self, title, author, genre, blurb):
         self.title = title
         self.author = author
         self.genre = genre
         self.blurb = blurb
-        self.checked_out = checked_out
+        self.status = None
+        
 
     
