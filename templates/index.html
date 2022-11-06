@@ -12,76 +12,73 @@
     <h1>{{title}}</h1>
 </header>
 
-<body>
-    <aside class="grid-container1">
-        <div>
-            <form class="form-inline" action="/library" method="post">
+<body id="page-container">
+    <section id="content-wrap">
+        <aside class="grid-container1">
+            <div>
+                <form class="form-inline" action="/library" method="post">
 
-                <label for="title">Book Title</label>
-                <input type="text" name="title" id="tile">
-        </div>
-        <div>
-            <label for="author">Author</label>
-            <input type="text" name="author" id="author">
-        </div>
-        <div>
-            <label for="genre">Genre</label>
-            <input class="grid-item2" type="text" name="genre" id="genre">
-        </div>
-        <div>
-            <label for="blurb">Summary</label>
-            <textarea class="grid-item2" name="blurb" rows="2" cols="30"></textarea>
-        </div>
-        <div>
-            <input type="submit" value="Add Book">
-        </div>
-
-
-    </aside>
-    <div>
-        <h2> Collection of Books</h2>
-
-        <section class="grid-container2">
-            {% for book in books%}
-            <div id="book">
-                <p>
-                    <b>Title: </b>{{book.title}}<br>
-                    <b>Author: </b>{{book.author}}<br>
-                    <b>Genre: </b>{{book.genre}}<br>
-                    <b>Status: </b>{{book_status}}
-
-                    {% if book.checked_out==False%}
-                    <span><b>Status: </b>Available &#9745;</span>
-                    {% endif %}
-                    {% if book.checked_out==True%}
-                    <span><b>Status: </b>Checked Out &#9746;</span>
-                    {% endif %}
-                    <br>
-
-
-                    <a href="/library/{{loop.index}}">More Info</a><br>
-
-                </p>
-                <div class="internal-buttons">
-                    <form class="form-inline" action="/library/delete/{{ book.title }}" method="POST">
-                        <input type="submit" value="Delete">
-                    </form>
-                    <br>
-                </div>
-
-
-
+                    <label for="title">Book Title</label>
+                    <input type="text" name="title" id="tile">
             </div>
-            {% endfor %}
+            <div>
+                <label for="author">Author</label>
+                <input type="text" name="author" id="author">
+            </div>
+            <div>
+                <label for="genre">Genre</label>
+                <input class="grid-item2" type="text" name="genre" id="genre">
+            </div>
+            <div>
+                <label for="blurb">Summary</label>
+                <textarea class="grid-item2" name="blurb" rows="2" cols="30"></textarea>
+            </div>
+            <div>
+                <input type="submit" value="Add Book">
+            </div>
+
+
+        </aside>
+        <div>
+            <h2> Collection of Books</h2>
+
+            <section class="grid-container2">
+                {% for book in books%}
+                <div id="book">
+                    <p>
+                        <b>Title: </b>{{book.title}}<br>
+                        <b>Author: </b>{{book.author}}<br>
+                        <b>Genre: </b>{{book.genre}}<br>
+                        <b>Status: </b>{{book_status}}
+                        <a href="/library/{{loop.index}}">More Info</a><br>
+
+                    </p>
+                    <div class="internal-buttons">
+                        <form class="form-inline" action="/library/delete/{{ book.title }}" method="POST">
+                            <input type="submit" value="Delete">
+                        </form>
+                        <br>
+                    </div>
+
+
+
+                </div>
+                {% endfor %}
+
+            </section>
+
+
+
+
+
+
 
         </section>
+        <footer id="footer">
+            <p>CodeClan Library Inc</p>
+        </footer>
 
-    </div>
 
 </body>
-
-<footer>
-    <p>CodeClan Library Inc</p>
-</footer>
 
 </html>

@@ -3,18 +3,70 @@ body {
 }
 
 
-footer {
-    font-family: garamond, sans-serif;
 
-    padding: 7px;
-    margin-bottom: 0;
+body {
+
+    padding-bottom: 30px;
+    min-height: 100vh;
+    position: relative;
+}
+
+
+
+
+
+#page-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+#content-wrap {
+  padding-bottom: 2.5rem;    
+}
+
+#footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 2.5rem;   
+  
+  background:#6cf;
+  background-color: #CEF0D1;
+  text-align: center;
+  color: #607062;
+  font-weight: bold;
+  padding-top:15px;
+  padding-bottom: 15px;
+  
+
+}
+
+
+
+
+
+
+
+
+/* 
+footer {
+
+    background:#6cf;
     background-color: #CEF0D1;
     text-align: center;
     color: #607062;
     font-weight: bold;
-}
+    padding-top:15px;
+
+ } */
+
+
+
+
+
 
 header {
+    padding-bottom: 0;
     font-family: garamond, sans-serif;
 }
 
