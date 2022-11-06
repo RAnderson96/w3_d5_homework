@@ -1,7 +1,7 @@
 from flask import render_template, request, redirect
 from app import app
 from models.library import Library
-from models.library_instance import books, add_book_to_list, remove_book_from_list, checkout_book
+from models.library_instance import books, add_book_to_list, remove_book_from_list
 
 @app.route('/library')
 def index():
@@ -17,7 +17,7 @@ def add_book():
     book_author = request.form["author"]
     book_genre = request.form["genre"]
     book_blurb = request.form["blurb"]
-    new_book = Library(book_title, book_author, book_author, book_blurb)
+    new_book = Library(book_title, book_author, book_genre, book_blurb, False)
     add_book_to_list(new_book)
     return redirect('/library')
 
@@ -26,9 +26,9 @@ def remove_book(title):
     remove_book_from_list(title)
     return redirect('/library')
 
-@app.route('/library/check_out/<title>', methods=['POST'])
-def check_out(title):
-    checkout_book(title)
-    return redirect('/library') 
+# @app.route('/library/books/<index>', methods=['POST'])
+# def check_out(index):
+#     checkout_book(index)
+#     return redirect('/library') 
 
     
